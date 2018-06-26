@@ -1,0 +1,53 @@
+{
+    "matches": {
+      "1847": {
+        "matchid":"1847",
+        "event":"SrcChess Game",
+        "site":"西安",
+        "date":"2018-03-20T00:00:00+10:00",
+        "round":3,
+        "white":"Player 5",
+        "black":"Player 6",
+        "result":"1-0",
+        "whitetype":"human",
+        "blacktype":"human",
+        "timecontrol":0,
+        "moves": {
+          "1white": {
+            "moveid": "1white",
+            "san": "e4"
+          },
+          "1black": {
+            "moveid": "1black",
+            "san": "e6"
+          }
+        }
+      },
+      "2081": {
+        "matchid":"2081",
+        "event":"SecondChess Game",
+        "site":"上海",
+        "date":"2019-03-20T00:00:00+10:00",
+        "round":2,
+        "white":"王麻子",
+        "black":"小明",
+        "result":"1/2-1/2",
+        "whitetype":"human",
+        "blacktype":"human",
+        "timecontrol":0,
+        "moves": {
+          "1white": {
+            "moveid": "1white",
+            "san": "e4"
+          },
+          "1black": {
+            "moveid": "1black",
+            "san": "e6"
+          }
+        }
+      }
+    },
+    "selectedmatch": "2081",
+    "selectedmove": "1white"
+    
+  }

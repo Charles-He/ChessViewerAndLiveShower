@@ -1,0 +1,26 @@
+.demobackup {
+	margin-left: 0px;
+	font-family: sans-serif;
+	flex: 1;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+}
+
+.demo {
+	margin-left: 0px;
+	font-family: sans-serif;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+}
+
+.propGroup {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.lastMessage {
+	display: inline-block;
+	position: absolute;
+}

@@ -1,0 +1,52 @@
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import * as liveShowSelectors from './store/liveshow/reducer';
+import CenterScreen from './containers/CenterScreen';
+import TopScreen from './containers/TopScreen';
+import BottomScreen from './containers/BottomScreen';
+import './matchviewer.css';
+
+class App extends Component {
+  render() {
+
+    console.log(this.props.match.params.userid);
+    console.log(this.props.match.params.event);
+    var userId = this.props.match.params.userid;
+    var event = this.props.match.params.event;
+    
+    // console.log(this.props.selectedMatch);
+    var layout;
+    if (window.innerHeight > window.innerWidth) {
+      layout = "lc-gameviewer lc-portrait";
+    } else {
+      layout = "lc-gameviewer lc-landscape";
+    }
+
+    return (
+      <div className="fullscreen gameviewer">
+        <div className={layout}>
+          <TopScreen 
+            userid={userId}
+            event = {event}
+          />
+            
+          {this.props.selectedMatch ?
+            <CenterScreen />:
+            <BottomScreen />
+          }
+
+          <BottomScreen />
+        </div> 
+      </div> 
+    );
+  }
+}
+
+// which props do we want to inject, given the global store state?
+function mapStateToProps(state) {
+  return {
+    selectedMatch: liveShowSelectors.getSelectedMatch(state)
+  };
+}
+
+export default connect(mapStateToProps)(App);

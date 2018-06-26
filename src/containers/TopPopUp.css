@@ -1,0 +1,15 @@
+.popupmenu {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+  }
+  .popupmenu-item {
+    cursor: pointer;
+    padding: 5px;
+    height: 28px;
+    border-bottom: 1px solid rgb(187, 187, 187);
+  }
+  .popupmenu-item:hover {
+    color: #2980b9;
+  }
